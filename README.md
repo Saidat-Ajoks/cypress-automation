@@ -1,34 +1,112 @@
-# Cypress Automation Project
 
-## Project Overview
+# 🚀 Cypress Automation Project
 
-This project demonstrates automated UI testing using Cypress on the SauceDemo website.
+## 📌 Project Overview
 
-## Test Scenarios
+This project contains automated UI tests for the **SauceDemo** e-commerce website using **Cypress**.
 
-### Login Test
-- Open the SauceDemo website.
-- Enter valid username and password.
-- Click the Login button.
-- Verify the user is redirected to the inventory page.
+The purpose of this project is to demonstrate practical UI test automation skills, including login validation and shopping cart functionality.
 
-### Add to Cart Test
-- Log in successfully.
-- Add the Sauce Labs Backpack to the shopping cart.
-- Verify the cart badge displays one item.
+---
 
-## Tools Used
+## 🌐 Application Under Test
+
+Website: https://www.saucedemo.com/
+
+---
+
+## 🛠 Technologies Used
+
 - Cypress
 - JavaScript
-- Visual Studio Code
+- Node.js
 - Git
 - GitHub
 
-## Website Tested
-https://www.saucedemo.com/
+---
 
-## GitHub Repository
-https://github.com/Saidat-Ajoks/cypress-automation
+## 📂 Project Structure
 
-## Author
-Ajoke Saidat
+```
+cypress-automation/
+│
+├── cypress/
+│   ├── e2e/
+│   │   ├── practice-login.cy.js
+│   │   └── saucedemos.cy.js
+│   ├── fixtures/
+│   └── support/
+│
+├── cypress.config.js
+├── package.json
+├── package-lock.json
+├── .gitignore
+└── README.md
+```
+
+---
+
+## ✅ Test Scenarios
+
+### Login Test
+
+- Open SauceDemo website
+- Enter valid username
+- Enter valid password
+- Click Login
+- Verify successful login
+- Verify Inventory page is displayed
+
+---
+
+### Add to Cart Test
+
+- Login successfully
+- Add **Sauce Labs Backpack** to cart
+- Verify cart badge displays **1**
+- Verify item was added successfully
+
+---
+
+## ▶️ Running the Project
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Open Cypress
+
+```bash
+npx cypress open
+```
+
+Run tests in headless mode
+
+```bash
+npx cypress run
+```
+
+---
+
+## 🎯 Learning Objectives
+
+This project demonstrates my ability to:
+
+- Write Cypress test cases
+- Use Cypress commands and assertions
+- Automate UI workflows
+- Organize test files
+- Manage projects with Git and GitHub
+
+---
+
+## 👩‍💻 Author
+
+**Ajoke Saidat**
+
+Aspiring Quality Assurance Automation Engineer
+
+GitHub:
+https://github.com/Saidat-Ajoks
