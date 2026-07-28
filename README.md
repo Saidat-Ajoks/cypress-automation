@@ -1,74 +1,78 @@
 
 # 🚀 Cypress Automation Project
 
-## 📌 Project Overview
-
-This project contains automated UI tests for the **SauceDemo** e-commerce website using **Cypress**.
-
-The purpose of this project is to demonstrate practical UI test automation skills, including login validation and shopping cart functionality.
 
 ---
 
-## 🌐 Application Under Test
+This project automates the **SauceDemo** e-commerce website using **Cypress**.
 
-Website: https://www.saucedemo.com/
+The automation validates the complete shopping journey by using **data-test** selectors, following QA automation best practices.
+
+🌐 **Application Under Test:** https://www.saucedemo.com/
 
 ---
 
-## 🛠 Technologies Used
+## 🛠️ Tech Stack
 
-- Cypress
-- JavaScript
-- Node.js
-- Git
-- GitHub
+| Technology | Purpose |
+|------------|---------|
+| 🌲 Cypress | UI Test Automation |
+| 💛 JavaScript | Test Scripting |
+| 🟢 Node.js | Runtime Environment |
+| 💻 VS Code | Code Editor |
+| 🌿 Git | Version Control |
+| 🐙 GitHub | Source Code Repository |
+
+---
+
+# ✅ Automated Test Scenarios
+
+✔️ Login with invalid credentials
+
+✔️ Login with valid credentials
+
+✔️ Sort products from **A → Z**
+
+✔️ Sort products from **Low → High**
+
+✔️ Add **4 products** to cart
+
+✔️ Remove **2 products** from cart
+
+✔️ Proceed to checkout
+
+✔️ Complete checkout successfully
 
 ---
 
 ## 📂 Project Structure
 
-```
-cypress-automation/
+```text
+cypress/
 │
-├── cypress/
-│   ├── e2e/
-│   │   ├── practice-login.cy.js
-│   │   └── saucedemos.cy.js
-│   ├── fixtures/
-│   └── support/
+├── e2e/
+│   └── saucedemo.cy.js
 │
-├── cypress.config.js
-├── package.json
-├── package-lock.json
-├── .gitignore
-└── README.md
+├── fixtures/
+│
+├── support/
+│   ├── commands.js
+│   └── e2e.js
+│
+package.json
+cypress.config.js
+README.md
 ```
 
 ---
 
-## ✅ Test Scenarios
+## ⚙️ Installation
 
-### Login Test
+Clone the repository
 
-- Open SauceDemo website
-- Enter valid username
-- Enter valid password
-- Click Login
-- Verify successful login
-- Verify Inventory page is displayed
-
----
-
-### Add to Cart Test
-
-- Login successfully
-- Add **Sauce Labs Backpack** to cart
-- Verify cart badge displays **1**
-- Verify item was added successfully
-
----
-
-## ▶️ Running the Project
+```bash
+git clone <repository-url>
+```
 
 Install dependencies
 
@@ -76,13 +80,17 @@ Install dependencies
 npm install
 ```
 
+---
+
+## ▶️ Run the Tests
+
 Open Cypress
 
 ```bash
 npx cypress open
 ```
 
-Run tests in headless mode
+Run headlessly
 
 ```bash
 npx cypress run
@@ -90,15 +98,32 @@ npx cypress run
 
 ---
 
-## 🎯 Learning Objectives
+## 🎯 Expected Results
 
-This project demonstrates my ability to:
+✅ Invalid users receive an error message.
 
-- Write Cypress test cases
-- Use Cypress commands and assertions
-- Automate UI workflows
-- Organize test files
-- Manage projects with Git and GitHub
+✅ Valid users log in successfully.
+
+✅ Products are sorted correctly.
+
+✅ Four products are added to the cart.
+
+✅ Two products are removed successfully.
+
+✅ Checkout is completed successfully.
+
+✅ Order confirmation page is displayed.
+
+---
+
+## 🚀 Skills Demonstrated
+
+- ✔️ End-to-End Testing
+- ✔️ UI Automation
+- ✔️ Assertions
+- ✔️ Data-Test Selectors
+- ✔️ Git & GitHub
+- ✔️ Cypress Best Practices
 
 ---
 
@@ -106,7 +131,8 @@ This project demonstrates my ability to:
 
 **Ajoke Saidat**
 
-Aspiring Quality Assurance Automation Engineer
+*QA Automation Engineer | Cypress Learner*
 
-GitHub:
-https://github.com/Saidat-Ajoks
+---
+
+⭐ If you found this project helpful, consider giving it a **star** on GitHub!
