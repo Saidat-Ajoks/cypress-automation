@@ -12,9 +12,12 @@ describe('SauceDemo Automation', () => {
     cy.login()
     cy.url().should('include', 'inventory')
 
-    // 3. Sort Filter
-    cy.get('[data-test="product-sort-container"]').select('az').should('have.value', 'az')
-    cy.get('[data-test="product-sort-container"]').select('lohi').should('have.value', 'lohi')
+    // 3. Sort Filter (FIXED HERE)
+    cy.get('[data-test="product-sort-container"]').select('az')
+    cy.get('[data-test="product-sort-container"]').should('have.value', 'az')
+
+    cy.get('[data-test="product-sort-container"]').select('lohi')
+    cy.get('[data-test="product-sort-container"]').should('have.value', 'lohi')
 
     // 4. Cart Operations
     cy.get('[data-test="add-to-cart-sauce-labs-backpack"]').click()
