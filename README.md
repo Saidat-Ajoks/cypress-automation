@@ -1,12 +1,10 @@
-
 # 🚀 Cypress Automation Project
-
 
 ---
 
 This project automates the **SauceDemo** e-commerce website using **Cypress**.
 
-The automation validates the complete shopping journey by using **data-test** selectors, following QA automation best practices.
+The project covers multiple UI automation scenarios including login validation, product sorting, cart management, checkout, and user validation using different SauceDemo user accounts.
 
 🌐 **Application Under Test:** https://www.saucedemo.com/
 
@@ -25,23 +23,37 @@ The automation validates the complete shopping journey by using **data-test** se
 
 ---
 
-# ✅ Automated Test Scenarios
+# ✅ Automation Scenarios
 
-✔️ Login with invalid credentials
+### Shopping Flow
+- ✔️ Login with invalid credentials
+- ✔️ Login with valid credentials
+- ✔️ Sort products from **A → Z**
+- ✔️ Sort products from **Low → High**
+- ✔️ Add **4 products** to cart
+- ✔️ Remove **2 products** from cart
+- ✔️ Proceed to checkout
+- ✔️ Complete checkout successfully
 
-✔️ Login with valid credentials
+### User Validation (Assertions)
+- ✔️ Standard User
+- ✔️ Locked Out User
+- ✔️ Problem User
+- ✔️ Performance Glitch User
+- ✔️ Error User
+- ✔️ Visual User
 
-✔️ Sort products from **A → Z**
+---
 
-✔️ Sort products from **Low → High**
+## ✔️ Assertions Covered
 
-✔️ Add **4 products** to cart
-
-✔️ Remove **2 products** from cart
-
-✔️ Proceed to checkout
-
-✔️ Complete checkout successfully
+- Verify successful login
+- Verify inventory page is displayed
+- Verify Products title
+- Verify locked out error message
+- Verify shopping cart updates
+- Verify checkout flow
+- Verify order confirmation page
 
 ---
 
@@ -51,7 +63,9 @@ The automation validates the complete shopping journey by using **data-test** se
 cypress/
 │
 ├── e2e/
-│   └── saucedemo.cy.js
+│   ├── saucedemo.cy.js
+│   ├── practice-login.cy.js
+│   └── Assertion.cy.js
 │
 ├── fixtures/
 │
@@ -100,19 +114,13 @@ npx cypress run
 
 ## 🎯 Expected Results
 
-✅ Invalid users receive an error message.
-
-✅ Valid users log in successfully.
-
-✅ Products are sorted correctly.
-
-✅ Four products are added to the cart.
-
-✅ Two products are removed successfully.
-
-✅ Checkout is completed successfully.
-
-✅ Order confirmation page is displayed.
+- ✅ Invalid users receive an error message.
+- ✅ Valid users log in successfully.
+- ✅ Products are sorted correctly.
+- ✅ Cart updates correctly.
+- ✅ Checkout completes successfully.
+- ✅ Order confirmation is displayed.
+- ✅ All user validation tests pass successfully.
 
 ---
 
@@ -120,8 +128,10 @@ npx cypress run
 
 - ✔️ End-to-End Testing
 - ✔️ UI Automation
-- ✔️ Assertions
+- ✔️ Cypress Assertions
 - ✔️ Data-Test Selectors
+- ✔️ ID Selectors
+- ✔️ Class Selectors
 - ✔️ Git & GitHub
 - ✔️ Cypress Best Practices
 
